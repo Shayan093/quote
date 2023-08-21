@@ -17,13 +17,22 @@ const workOrNot = [
     "Time to work its Friday",
     "Relax its Saturday",
 ]
-const 
+const tidBits = [
+    "Relaxation",
+    "Focus",
+    "Consistency",
+    "Creativity",
+    "Direction",
+    "Planning",
+    "Wind Down"
+]
 
 // A function to get the quote for the current day
 function getQuote() {
     const today = new Date().getDay() //Gets current day of the week from 0-6 starting from Sunday
     console.log(quotes[today])
     console.log(workOrNot[today])
+    console.log(tidBits[today])
 }
 
 getQuote();
